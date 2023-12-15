@@ -4,7 +4,7 @@
     <div class="flex-container">
       <mat-button-toggle-group aria-label="Tipo de passagem" formControlName="somenteIda">
         <mat-button-toggle checked>
-          <mat-icon>check</mat-icon>
+          <mat-icon *ngIf="formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
           IDA E VOLTA
         </mat-button-toggle>
         <mat-button-toggle>SOMENTE IDA</mat-button-toggle>
